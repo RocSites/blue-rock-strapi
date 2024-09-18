@@ -897,6 +897,11 @@ export interface ApiLiquorLiquor extends Schema.CollectionType {
       'manyToOne',
       'api::category.category'
     >;
+    topRated: Attribute.Boolean & Attribute.DefaultTo<false>;
+    bestSeller: Attribute.Boolean & Attribute.DefaultTo<false>;
+    staffPicks: Attribute.Boolean & Attribute.DefaultTo<false>;
+    specials: Attribute.Boolean & Attribute.DefaultTo<false>;
+    trendingFeatured: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -941,6 +946,11 @@ export interface ApiWineWine extends Schema.CollectionType {
       'manyToOne',
       'api::category.category'
     >;
+    topRated: Attribute.Boolean & Attribute.DefaultTo<false>;
+    bestSeller: Attribute.Boolean & Attribute.DefaultTo<false>;
+    staffPicks: Attribute.Boolean & Attribute.DefaultTo<false>;
+    specials: Attribute.Boolean & Attribute.DefaultTo<false>;
+    trendingFeatured: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
