@@ -10,4 +10,10 @@ module.exports = {
             },
         },
     },
+    'import-export-entries': {
+        enabled: true,
+        config: {
+            serverPublicHostname: "https://blue-rock-2-582887419943.us-east1.run.app"
+        }
+    }
 }
